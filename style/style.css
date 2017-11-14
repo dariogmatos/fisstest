@@ -1,0 +1,625 @@
+body {
+	font-family: "Arial", Helvetica, sans-serif
+}
+
+.header {
+	width: 100%;
+	text-align: center;
+}
+
+.logo {
+	margin: 20px;
+}
+
+.info {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.info li {
+	display: inline-block;
+	padding: 0 10px;
+	color: #3A3335;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.info li:last-child {
+	border-left: 1px solid #3A3335;
+	margin: 20px auto;
+}
+
+.search {
+	width: 350px;
+	height: 36px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.nav {
+	background-color: #3A3335;
+	margin-bottom: 28px;
+}
+
+.navCont {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	position: relative;
+	text-align: center;
+}
+
+.navItems {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+}
+
+.navItems>li {
+	color: #FCAF17;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 15px;
+	border-bottom: 1px solid black;
+}
+
+.menuHombre {
+	background-color: white;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	height: 0px;
+	overflow: hidden;
+	transition: .3s;
+	z-index: 999;
+}
+
+.menuHombre.isActive {
+	height: 250px;
+	transition: .5s;
+}
+
+.menuLeft {
+	width: 100%;
+}
+
+.menuLeft p {
+	display: inline-block;
+	margin: 5px;
+	padding: 5px 10px;
+	background-color: #FCAF17;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.menuItems {
+	list-style: none;
+	margin: 20px 0;
+	padding: 0;
+}
+
+.menuItems li {
+	margin: 10px 0;
+}
+
+.verMas {
+	font-weight: bold;
+}
+
+.verMas i {
+	top: 7px;
+	height: 20px;
+	width: 20px;
+	background-position: -218px 0;
+}
+
+.carrito {
+	color: white;
+	font-weight: bold;
+	padding: 15px;
+}
+
+.carrito span {
+	line-height: 20px;
+	margin: 0 5px;
+}
+
+.banners>img {
+	width: 100%;
+}
+
+.black {
+	height: 100px;
+	background: black;
+	overflow: hidden;
+}
+
+.black p {
+	color: yellow;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 32px;
+	margin: 0;
+	animation: fadein 5s linear;
+	position: relative;
+	left: -1000px;
+	width: 1000px;
+	line-height: 100px;
+}
+
+.productos {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 25px auto 100px auto;
+	padding: 10px;
+}
+
+.filtros {
+	width: 100%;
+}
+
+.filtros p {
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: -1px;
+}
+
+.filtrosMenu {
+	list-style: none;
+	padding: 0;
+}
+
+.filtrosMenu>li {
+	background-color: black;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 10px 0 0 0;
+	padding: 5px 10px;
+	color: white;
+}
+
+.filtrosMenu>li:nth-child(4) {
+	margin-top: 20px;
+}
+
+.toggleSubmenu.isActive {
+	background: #fcaf17;
+	color: black
+}
+
+.submenu {
+	list-style: none;
+	height: 0px;
+	overflow: hidden;
+	transition: .5s;
+	margin: 10px 0;
+	padding: 0;
+	font-size: 15px;
+}
+
+.submenu.isActive {
+	height: 75px;
+	transition: .5s;
+}
+
+.check {
+	margin: 5px;
+}
+
+.galeria {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+}
+
+.item {
+	width: 75%;
+	margin: 22px 0;
+}
+
+.item p {
+	margin: 5px 0;
+}
+
+.img {
+	width: 100%;
+	border: 1px solid #cccccc;
+}
+
+.titulo {
+	color: #311F20;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	transition: .1s;
+}
+
+.oferta {
+	background: red;
+	color: white;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 1px 0;
+	visibility: hidden;
+}
+
+.oferta.isActive {
+	visibility: visible;
+}
+
+.precio {
+	color: #D44700;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 25px;
+	transition: .1s;
+}
+
+.categoria {
+	color: #5C5C5C;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.footer {
+	height: 58px;
+	background-color: #3A3335;
+}
+
+.footCont {
+	display: flex;
+	flex-flow: row no-wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.icon {
+	display: inline-block;
+	position: relative;
+	background-image: url("../images/sprite.png");
+}
+
+.icon.pin {
+	top: 5px;
+	height: 20px;
+	width: 20px;
+	background-position: -47px 0;
+}
+
+.icon.etiqueta {
+	top: 5px;
+	height: 20px;
+	width: 20px;
+	background-position: -67px 0;
+}
+
+.icon.lupa {
+	height: 36px;
+	width: 36px;
+	background-position: -1px -55px;
+	background-color: #FCAF17;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.icon.carritoIcon {
+	top: 5px;
+	height: 20px;
+	width: 20px;
+	background-position: -87px 0;
+}
+
+.icon.filtroIcon {
+	float: right;
+	height: 15px;
+	width: 20px;
+	background-position: -300px 0;
+}
+
+.icon.adidas {
+	float: right;
+	height: 25px;
+	width: 35px;
+	background-position: -8px -29px;
+}
+
+.icon.nike {
+	float: right;
+	height: 25px;
+	width: 35px;
+	background-position: -57px -29px;
+}
+
+.icon.puma {
+	float: right;
+	height: 25px;
+	width: 35px;
+	background-position: -157px -29px;
+}
+
+.icon.vtex {
+	height: 30px;
+	width: 75px;
+	background-position: -200px -20px;
+}
+
+.icon.fizzmod {
+	height: 30px;
+	width: 75px;
+	background-position: -195px -48px;
+	margin-left: 20px;
+}
+
+.right {
+	margin: 0 auto;
+}
+
+.hide {
+	display: none;
+}
+
+@keyframes fadein {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -1000px;
+	}
+
+}
+
+/***********************************************************/
+@media screen and (min-width:768px) {
+	.search {
+		width: 550px;
+		vertical-align: top;
+	}
+
+	.item {
+		width: 45%;
+		margin: 0 5px 22px 5px;
+	}
+
+}
+
+/***********************************************************/
+@media screen and (min-width:1024px) {
+	.header {
+		height: 105px;
+		width: 980px;
+		display: flex;
+		flex-flow: row no-wrap;
+		margin: 0 auto;
+		align-items: center;
+		justify-content: space-between;
+		text-align: initial;
+	}
+
+	.logo {
+		cursor: pointer;
+		margin: 0;
+	}
+
+	.header div {
+		align-self: flex-start;
+	}
+
+	.info {
+		text-align: right;
+		margin: 10px 0 20px 0;
+	}
+
+	.info li {
+		cursor: pointer;
+	}
+
+	.info li:last-child {
+		margin: auto;
+	}
+
+	.search {
+		width: 500px;
+		vertical-align: top;
+		margin-bottom: 0;
+	}
+
+	.oferta {
+		margin-left: 40px;
+	}
+
+	.nav {
+		height: 40px;
+		width: 100%;
+	}
+
+	.navCont {
+		flex-flow: row no-wrap;
+		width: 980px;
+		margin: 0 auto;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		position: relative;
+		text-align: initial;
+	}
+
+	.navItems {
+		width: initial;
+	}
+
+	.navItems>li {
+		display: inline-block;
+		cursor: pointer;
+		padding: 0 20px;
+		border: none;
+	}
+
+	.navItems>li:nth-child(3) {
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+	}
+
+	.navItems>li:hover {
+		color: #f9d081;
+	}
+
+	.menuHombre {
+		width: 450px;
+		position: absolute;
+		top: 45px;
+		box-shadow: 0 0 10px #555555;
+		flex-flow: row no-wrap;
+		align-items: flex-start;
+		padding-top: 20px;
+		opacity: 0;
+		height: 0px;
+		overflow: initial;
+		transition: height .3s .3s, opacity .3s;
+	}
+
+	.menuHombre.isActive {
+		opacity: 1;
+		height: 330px;
+		transition: height .3s, opacity .3s .3s;
+	}
+
+	.menuHombre::before {
+		position: absolute;
+		top: -8px;
+		left: 50px;
+		transform: rotate(45deg);
+		width: 15px;
+		height: 15px;
+		background-color: white;
+		content: "";
+	}
+
+	.menuLeft {
+		width: 168px;
+		padding-left: 40px;
+		height: 300px;
+		border-right: 2px solid #CCCCCC;
+	}
+
+	.menuLeft p {
+		margin: 0;
+	}
+
+	.menuItems li {
+		cursor: pointer;
+	}
+
+	.carrito {
+		padding: initial;
+		cursor: pointer;
+	}
+
+	.banners {
+		width: 980px;
+		margin: 0 auto;
+		cursor: pointer;
+	}
+
+	.black {
+		height: 200px;
+	}
+
+	.black p {
+		left: -100% width:initial;
+		line-height: 200px;
+	}
+
+	.productos {
+		flex-flow: row no-wrap;
+		width: 980px;
+		margin: 0 auto 100px auto;
+		padding: initial;
+	}
+
+	.filtros {
+		width: 200px;
+	}
+
+	.filtrosMenu {
+		width: 165px;
+	}
+
+	.filtrosMenu>li {
+		cursor: pointer;
+	}
+
+	.filtrosMenu>li:hover {
+		background: #fcaf17;
+		color: black
+	}
+
+	.galeria {
+		width: 780px;
+		justify-content: initial;
+	}
+
+	.item {
+		width: 185px;
+	}
+
+	.img {
+		cursor: pointer;
+	}
+
+	.titulo.isActive {
+		font-size: 17px;
+		transition: .1s;
+	}
+
+	.oferta.isActive {
+		visibility: visible;
+	}
+
+	.precio.isActive {
+		color: green;
+		transition: .1s;
+	}
+
+	.footCont {
+		width: 980px;
+		margin: 0 auto;
+		justify-content: flex-end;
+	}
+
+	.icon.fizzmod {
+		margin: 0 20px;
+	}
+
+	.right {
+		margin: 0 auto;
+	}
+
+	.hide {
+		display: block;
+	}
+
+	@keyframes fadein {
+		from {
+			left: 100%;
+		}
+
+		to {
+			left: -100%;
+		}
+
+	}
+
+}

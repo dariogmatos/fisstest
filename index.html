@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>fizztest</title>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./images/logo.jpg" alt="fizztest" class="logo">
+        <div>
+            <ul class="info">
+                <li><i class="icon pin"></i> sucursales</li>
+                <li><i class="icon etiqueta"></i> cómo comprar</li>
+                <li>mis pedidos</li>
+            </ul>
+            <div>
+                <input type="search" placeholder="Buscar por productos, deportes o marcas..." class="search" /><i class="icon lupa"></i>
+                <img src="./images/HeaderHomeAbril.gif" alt="Oferta futbol" class="oferta" />
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="navCont">
+            <ul class="navItems">
+                <li class="navItem1">hombre</li>
+                <div class="menuHombre">
+                    <div class="menuLeft">
+                        <p>calzado</p>
+                        <ul class="menuItems">
+                            <li>Botines</li>
+                            <li>Zapatillas</li>
+                            <li>Botines con tapones</li>
+                            <li>Ojotas / Chinelas</li>
+                            <li>Sandalia</li>
+                            <li class="verMas">Ver más <i class="icon"></i></li>
+                        </ul>
+                    </div>
+                    <article class="item right hide">
+                        <img src="./images/river.jpg" alt="camiseta de futbol Adidas river plate away" class="img">
+                        <p class="titulo">camiseta de futbol Adidas river plate away</p>
+                        <p class="precio">$ 849,00 <i class="icon adidas"></i></p>
+                        <p class="categoria">camisetas futbol</p>
+                    </article>
+                </div>
+                <li>mujer</li>
+                <li>niños</li>
+            </ul>
+            <div class="carrito">
+                <span>Carrito</span>
+                <i class="icon carritoIcon"></i>
+                <span>0</span>
+                <span>$0,00</span>
+            </div>
+        </div>
+    </nav>
+    <section class="banners">
+        <img src="./images/racing-980x400.jpg" alt="Nueva camiseta racing club 2015" class="carrousel">
+        <img src="./images/marcas.jpg" alt="marcas" class="marcas">
+    </section>
+    <section class="productos">
+        <div class="filtros">
+            <p>filtro por</p>
+            <ul class="filtrosMenu">
+                <li class="toggleSubmenu">sexo<i class="icon filtroIcon"></i></li>
+                <ul class="submenu">
+                    <li>
+                        <input type="checkbox" id="checkHombre" class="check">
+                        <label for="checkHombre">Hombre</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkMujer" class="check">
+                        <label for="checkMujer">Mujer</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkNiños" class="check">
+                        <label for="checkNiños">Niños</label>
+                    </li>
+                </ul>
+                <li>deporte<i class="icon filtroIcon"></i></li>
+                <li>color<i class="icon filtroIcon"></i></li>
+            </ul>
+        </div>
+        <div class="galeria">
+            <article class="item">
+                <img src="./images/river.jpg" alt="camiseta de futbol Adidas river plate away" class="img">
+                <p class="oferta">oferta</p>
+                <p class="titulo">camiseta de futbol Adidas river plate away</p>
+                <p class="precio">$ 849,00 <i class="icon adidas"></i></p>
+                <p class="categoria">camisetas futbol</p>
+            </article>
+            <article class="item">
+                <img src="./images/adidas.jpg" alt="zapatillas adidas original" class="img">
+                <p class="oferta">oferta</p>
+                <p class="titulo">zapatillas adidas original</p>
+                <p class="precio">$ 370,00 <i class="icon adidas"></i></p>
+                <p class="categoria">zapatillas</p>
+            </article>
+            <article class="item">
+                <img src="./images/short.jpg" alt="short nike squad strike lgb" class="img">
+                <p class="oferta">oferta</p>
+                <p class="titulo">short nike squad strike lgb</p>
+                <p class="precio">$ 399,00 <i class="icon nike"></i></p>
+                <p class="categoria">short</p>
+            </article>
+            <article class="item">
+                <img src="./images/boca.jpg" alt="camiseta de futbol nike boca away" class="img">
+                <p class="oferta">oferta</p>
+                <p class="titulo">camiseta de futbol nike boca away</p>
+                <p class="precio">$ 399,00 <i class="icon nike"></i></p>
+                <p class="categoria">camisetas futbol</p>
+            </article>
+            <article class="item">
+                <img src="./images/boca.jpg" alt="camiseta de futbol nike boca away" class="img">
+                <p class="oferta">oferta</p>
+                <p class="titulo">camiseta de futbol nike boca away</p>
+                <p class="precio">$ 399,00 <i class="icon nike"></i></p>
+                <p class="categoria">camisetas futbol</p>
+            </article>
+            <article class="item">
+                <img src="./images/short.jpg" alt="short nike squad strike lgb" class="img">
+                <p class="oferta">oferta</p>
+                <p class="titulo">short nike squad strike lgb</p>
+                <p class="precio">$ 399,00 <i class="icon nike"></i></p>
+                <p class="categoria">short</p>
+            </article>
+            <article class="item">
+                <img src="./images/adidas.jpg" alt="zapatillas adidas original" class="img">
+                <p class="oferta">oferta</p>
+                <p class="titulo">zapatillas adidas original</p>
+                <p class="precio">$ 370,00 <i class="icon adidas"></i></p>
+                <p class="categoria">zapatillas</p>
+            </article>
+            <article class="item">
+                <img src="./images/river.jpg" alt="camiseta de futbol Adidas river plate away" class="img">
+                <p class="oferta">oferta</p>
+                <p class="titulo">camiseta de futbol Adidas river plate away</p>
+                <p class="precio">$ 849,00 <i class="icon adidas"></i></p>
+                <p class="categoria">camisetas futbol</p>
+            </article>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footCont">
+            <i class="icon vtex"></i>
+            <i class="icon fizzmod"></i>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./scripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</body>
+
+</html>
